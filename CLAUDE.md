@@ -42,9 +42,10 @@ build step.
 **First task:** write `privacy.md` and `support.md`, then turn on GitHub Pages for this
 repository (Settings → Pages → deploy from `main`, root). Pages renders Markdown with its
 default Jekyll theme, so a `.md` file at the root becomes a page at the same path without
-the extension. Then point `packpin.app` at it — a `CNAME` file holding the domain in this
-repository, and the DNS records GitHub documents at the registrar. Record the registrar and
-the final URLs in the table below the day they exist.
+the extension. **There is no custom domain** — decided 2026-09-09: the site is GitHub Pages'
+own address, `https://graboosky.github.io/packpin-web/`, and it stays a plain set of legal documents. Support is the owner's
+existing address, `p.grabowski.kontakt@gmail.com`. Confirm the two URLs return 200 the day Pages is on, and record
+that in the table below.
 
 The privacy policy must describe what the app actually does. Community restock reports and a
 saved-machines list are user data the moment they leave the device; write the policy against
@@ -55,11 +56,12 @@ the shipped feature set, and change it in the same release that changes what is 
 
 | What | Value |
 |---|---|
-| Production domain | `packpin.app` |
-| DNS / registrar | <TODO: register it before the first store submission — it was free on 2026-09-08> |
+| Site address | `https://graboosky.github.io/packpin-web/` — GitHub Pages' own; no custom domain (decided 2026-09-09) |
+| DNS / registrar | none |
 | Host | GitHub Pages, from `main`, root |
-| Privacy policy URL | <TODO: `https://packpin.app/privacy` once it returns 200> |
-| Support URL | <TODO: `https://packpin.app/support` once it returns 200> |
+| Privacy policy URL | `https://graboosky.github.io/packpin-web/privacy` — <TODO: confirm 200 once Pages is on> |
+| Support URL | `https://graboosky.github.io/packpin-web/support` — <TODO: confirm 200 once Pages is on> |
+| Support address | `p.grabowski.kontakt@gmail.com` |
 
 Store review fetches the privacy policy and support URLs; each must return 200 before any
 submission, and a 404 costs a review cycle.
