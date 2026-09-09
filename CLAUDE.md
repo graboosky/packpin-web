@@ -20,6 +20,8 @@ a container-level change, recorded in `../CLAUDE.md`'s tree.
 
 ```
 packpin-web/
+├── .editorconfig   editor defaults; no build reads it
+├── .gitignore      the usual shapes, and the credentials that never enter the tree
 ├── CLAUDE.md
 ├── README.md
 ├── _config.yml     the site title and description — the only configuration
