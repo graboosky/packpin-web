@@ -22,30 +22,26 @@ a container-level change, recorded in `../CLAUDE.md`'s tree.
 packpin-web/
 ├── CLAUDE.md
 ├── README.md
-├── index.md        planned — what PackPin is, and links to the documents below
-├── privacy.md      planned — the privacy policy the store listing links to
-├── terms.md        planned — terms of use
-└── support.md      planned — how to reach support
+├── _config.yml     the site title and description — the only configuration
+├── index.md        what PackPin is, and links to the documents below
+├── privacy.md      the privacy policy the store listing links to
+└── support.md      how to reach support, and the suggest-a-machine lines
 ```
 
 **This tree is the single source of truth for this repository's structure. When a file is
-added, removed, or renamed, update it in the same change.** The four documents are planned,
-not written; drop the word as each one lands.
+added, removed, or renamed, update it in the same change.**
+
+**There is no `terms.md`.** The terms are Apple's standard Licensed Application End User
+License Agreement, linked from `index.md` and from the app; a document of PackPin's own
+would only diverge from it.
 
 ## Status
 
-Nothing is written yet. There is no package manifest, no dependencies, and there will be no
-build step.
+The three documents are written and Pages is on (from `main`, root, switched on through the
+GitHub API on 2026-09-09). Pages renders Markdown with its default theme, so a `.md` file at
+the root becomes a page at the same path without the extension.
 
 **Stack decided:** Markdown legal documents (privacy policy, terms of use, support) served by GitHub Pages from this public repository. No build step, no package manifest, no dependencies.
-
-**First task:** write `privacy.md` and `support.md`, then turn on GitHub Pages for this
-repository (Settings → Pages → deploy from `main`, root). Pages renders Markdown with its
-default Jekyll theme, so a `.md` file at the root becomes a page at the same path without
-the extension. **There is no custom domain** — decided 2026-09-09: the site is GitHub Pages'
-own address, `https://graboosky.github.io/packpin-web/`, and it stays a plain set of legal documents. Support is the owner's
-existing address, `p.grabowski.kontakt@gmail.com`. Confirm the two URLs return 200 the day Pages is on, and record
-that in the table below.
 
 The privacy policy must describe what the app actually does. Community restock reports and a
 saved-machines list are user data the moment they leave the device; write the policy against
@@ -59,8 +55,8 @@ the shipped feature set, and change it in the same release that changes what is 
 | Site address | `https://graboosky.github.io/packpin-web/` — GitHub Pages' own; no custom domain (decided 2026-09-09) |
 | DNS / registrar | none |
 | Host | GitHub Pages, from `main`, root |
-| Privacy policy URL | `https://graboosky.github.io/packpin-web/privacy` — <TODO: confirm 200 once Pages is on> |
-| Support URL | `https://graboosky.github.io/packpin-web/support` — <TODO: confirm 200 once Pages is on> |
+| Privacy policy URL | `https://graboosky.github.io/packpin-web/privacy` — confirmed 200 on 2026-09-09 |
+| Support URL | `https://graboosky.github.io/packpin-web/support` — confirmed 200 on 2026-09-09 |
 | Support address | `p.grabowski.kontakt@gmail.com` |
 
 Store review fetches the privacy policy and support URLs; each must return 200 before any
