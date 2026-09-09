@@ -1,6 +1,6 @@
 # PackPin — Web
 
-Find Pokémon TCG vending machines near you, official and independent, worldwide, with community restock reports.
+Find Pokémon TCG vending machines near you, official and independent, worldwide.
 
 The web platform repository of the PackPin container. `../CLAUDE.md` governs product
 behavior, domain vocabulary, user-facing copy, and releases. This file governs what this
@@ -43,7 +43,9 @@ The three documents are written and Pages is on (from `main`, root, switched on 
 GitHub API on 2026-09-09). Pages renders Markdown with its default theme, so a `.md` file at
 the root becomes a page at the same path without the extension.
 
-**Stack decided:** Markdown legal documents (privacy policy, terms of use, support) served by GitHub Pages from this public repository. No build step, no package manifest, no dependencies.
+**Stack decided:** Markdown legal documents (privacy policy and support; the terms are
+Apple's standard EULA) served by GitHub Pages from this public repository. No build step,
+no package manifest, no dependencies.
 
 The privacy policy must describe what the app actually does. Community restock reports and a
 saved-machines list are user data the moment they leave the device; write the policy against
@@ -76,7 +78,7 @@ document rendered on github.com before pushing, and the live URL after.
 - **Product copy comes from `../docs/domain.md`.** The product's name, what it does, and any
   sentence a user could also read inside the app are written once, there, and quoted here.
   Legal text has no other home; this repository is its source of truth.
-- **Every legal document carries an absolute date** (`Last updated: 2026-09-08`), never a
+- **Every legal document carries an absolute date** (`Last updated: 2026-09-09`), never a
   relative one, and the date changes whenever the text does.
 - **English first.** A localized document is a sibling with a language suffix
   (`privacy.pl.md`), linked from the English one, and it says the English version governs.
